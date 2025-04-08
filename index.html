@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@100..900&display=swap" rel="stylesheet">
+  <title>Aardrijkskunde</title>
+  <style>
+    /* General reset */
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      background-color: #ffffff;
+      font-family: "Silkscreen", sans-serif;
+    }
+
+    /* Container for the clickable text links */
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px; /* Space between the links */
+      margin: 30px auto; /* Add margin to prevent cutting */
+      width: 80%; /* Optional: Limit the container width */
+    }
+
+    /* Style for the clickable text links */
+    .clickable-text {
+      font-size: 30px;
+      color: #333;
+      text-decoration: none; /* Remove underline */
+      transition: color 0.3s ease, transform 0.2s ease; /* Smooth hover effects */
+      margin-bottom: 50px;
+      border: #333 solid 2px;
+      padding: 10px;
+      text-align: center;
+      font-family: "Lexend Giga", sans-serif;
+    }
+
+    .clickable-text:hover {
+      color: #68faff; /* Change color on hover */
+      transform: scale(1.05); /* Slight zoom on hover */
+    }
+
+    .bold {
+      font-weight: 700;
+      font-size: 29px;
+    }
+
+    /* Media query for laptop screens */
+    @media (min-width: 1024px) {
+      .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Two columns */
+        grid-template-rows: repeat(5, auto); /* Five rows */
+        grid-gap: 20px; /* Space between items */
+        justify-items: start; /* Align items to the start of each column */
+        margin: 20px auto; /* Add margin to prevent cutting */
+      }
+      .clickable-text {
+        width: 100%; /* Make the clickable text take full width */
+        max-width: 300px; /* Optional: Limit the width for better appearance */
+        margin-bottom: 20px; /* Ensure spacing between items */}
+    }
+
+    /* Media query for phone screens */
+    @media (max-width: 768px) {
+      .container {
+        display: flex;
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items horizontally */
+      }
+
+      .clickable-text {
+        width: 100%; /* Make the clickable text take full width */
+        max-width: 300px; /* Optional: Limit the width for better appearance */
+        margin-bottom: 20px; /* Ensure spacing between items */
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Clickable text links -->
+    <a href="para.html" class="clickable-text">Paragraaf 9 dl 1</a> 
+    <a href="parb.html" class="clickable-text">Paragraaf 9 dl 2</a>
+    <a href="pf.html" class="clickable-text">Paragraaf 10 dl 1</a>
+    <a href="pa.html" class="clickable-text">Paragraaf 10 dl 2</a>
+    <a href="br.html" class="clickable-text">Paragraaf 11</a>
+    <a href="bb.html" class="clickable-text">B100</a>
+    <a href="ab.html" class="clickable-text">B105</a>
+    <a href="ac.html" class="clickable-text">B98</a>
+    <a href="ad.html" class="clickable-text">B121</a>
+    <a href="ae.html" class="clickable-text">B78</a>
+    <a href="af.html" class="clickable-text">Bronnen</a>
+  </div>
+</body>
+</html>
